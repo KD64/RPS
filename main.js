@@ -20,6 +20,7 @@ function computerPlay(){
 
 function playRound(playerSelection, computerSelection){
     //compares player and cpu values, logs round result and increments winner score by 1
+    
     if(playerSelection == "rock"){
         if(computerSelection == "paper"){
             console.log("You Lose! Paper beats Rock");
@@ -60,7 +61,7 @@ function playRound(playerSelection, computerSelection){
         }
     }
     else{
-        return "What?";
+        return console.log("What?");
     }
 }
 
@@ -68,7 +69,7 @@ function playRound(playerSelection, computerSelection){
 
 
 function game(){
-        
+     //plays 5 rounds of RPS whilst tracking score between rounds   
      for (let i = 0; i < 5; i++) {
         playerSelection = prompt().toLowerCase();
         computerSelection = computerPlay();
